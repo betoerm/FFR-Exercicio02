@@ -1,3 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 
-export const About = () => <h1>About page</h1>;
+export class Users extends Component{
+ 
+}
+
+
