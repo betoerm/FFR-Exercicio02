@@ -11,6 +11,9 @@ export function App() {
         </li>
         <li>
           <Link to="/users">Users</Link>
+        </li>        
+        <li>
+          <Link to="/test">test</Link>
         </li>
       </ul>
 
