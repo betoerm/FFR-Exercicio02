@@ -5,7 +5,7 @@ export class UsersDetail extends React.Component {
     render(){
 
         if(!this.props.match.params.name) return null;
-
+        
         return(
             <div>
                 <h2>User Detail</h2>

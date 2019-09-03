@@ -16,7 +16,7 @@ export class Users extends React.Component{
     }
 
     remove(id){        
-        let newData = this.state.data.splice(id, 1);        
+        let newData = this.state.data.filter(e => {return e.id !== id});
         this.setState({data: newData});
     }
 
@@ -24,7 +24,13 @@ export class Users extends React.Component{
         return(
             <div>
                 <div>
-                    <h1>Users</h1>
+                    <h1>Users</h1>                   
+                    
+                    <form className="form-inline my-2 my-lg-0">
+                        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                   
                     <tr>
                         <td>Name</td>
                         <td>Email</td>

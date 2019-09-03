@@ -11,12 +11,11 @@ export function App() {
         </li>
         <li>
           <Link to="/users">Users</Link>
-        </li>        
+        </li>  
         <li>
-          <Link to="/test">test</Link>
-        </li>
+          <Link to="/usershooks">Users Hooks</Link>
+        </li>  
       </ul>
-
       <ApplicationRoutes />
     </div>
   );
